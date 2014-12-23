@@ -1,4 +1,0 @@
-[submodule "data"]
-	path = data
-	url = git@github.com:tlevine/nyc-crime-map-data.git
-	url = nsa:/lockers/tlevine_vol/jail/small.dada.pink/nyc-crime-map-data/.git
