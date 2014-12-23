@@ -10,7 +10,7 @@ Assuming a flat Earth,
 
 To replicate
 ---------------
-Install R, download the present repository, and run.
+Install R, download the present repository and run.
 
     ./xy.R
 
