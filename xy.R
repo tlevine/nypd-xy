@@ -16,8 +16,8 @@ unscientific <- function(x) format(x, scientific = F)
 write.formula <- function(model) {
   b0 <- coef(model)[1]
   b1 <- coef(model)[2]
-  y <- names(attr(lat$terms, 'dataClasses'))[[1]]
-  x1 <- names(attr(lat$terms, 'dataClasses'))[[1]]
+  y <- names(attr(model$terms, 'dataClasses'))[[1]]
+  x1 <- names(attr(model$terms, 'dataClasses'))[[2]]
 
   paste(format(y, scientific = FALSE),
         '=',
@@ -31,7 +31,8 @@ write.formula <- function(model) {
 # Go
 long <- lm(longitude ~ X, data = crime)
 lat <- lm(latitude ~ Y, data = crime)
-cat(paste('Assuming a flat Earth,',
+cat(paste('If we assume that the Earth is flat, we can convert',
+          'NYPD X and Y to longitude and latitude like so.',
           write.formula(long),
           write.formula(lat),
           '',
