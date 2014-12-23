@@ -5,7 +5,7 @@ if (!'crime' %in% ls())
   crime <- read.csv('data/02378420399528461352-11853667273131550346.csv')
 
 # Take a sample for development.
-cr <- crime[sample.int(nrow(crime), 1e3),]
+crime.sample <- crime[sample.int(nrow(crime), 1e3),]
 
 #' Express a number as a character in unscientific format.
 #' @param x numeric
