@@ -1,4 +1,4 @@
-#!/usr/bin/env Rscipt
+#!/usr/bin/env Rscript
 
 # Load the data
 if (!'crime' %in% ls())
