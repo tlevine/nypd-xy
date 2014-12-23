@@ -19,12 +19,10 @@ write.formula <- function(model) {
         format(x1, scientific = FALSE))
 }
 
-main <- function() {
-  long <- lm(longitude ~ X, data = crime)
-  lat <- lm(latitude ~ Y, data = crime)
-  cat(paste('Assuming a flat Earth,',
-            write.formula(long),
-            write.formula(lat),
-            '',
-            sep = '\n'))
-}
+long <- lm(longitude ~ X, data = crime)
+lat <- lm(latitude ~ Y, data = crime)
+cat(paste('Assuming a flat Earth,',
+          write.formula(long),
+          write.formula(lat),
+          '',
+          sep = '\n'))

@@ -1,0 +1,21 @@
+how to convert NYPD X/Y to lat/lng?
+====================================
+
+Result
+-----------
+Assuming a flat Earth,
+
+  latitude = -77.54227 + 0.000003599176 × latitude
+  latitude = 40.16624 + 0.000002746597 × latitude
+
+To replicate
+---------------
+Install R, download the present repository, and run.
+
+    ./xy.R
+
+References
+---------------
+
+* https://twitter.com/dancow/status/547157958476693504
+* https://twitter.com/thomaslevine/status/547271370418434048
